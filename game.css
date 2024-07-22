@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap');
+
+
+html{
+    background-color: #E6ECFF;
+    font-size: 12;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorantlnfant';
+    font-family: "Silkscreen";
+}
+
+h1{
+    font-size: 70px;
+    font-weight: 400;
+    color: #6B7DB3;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 400;
+    color: #6B7DB3;
+}
+
+p{
+    font-size: 24px;
+    font-weight: 400;
+    color: #6B7DB3;
+}
+
+.start-game{
+    color: #9296FF;
+
+}
+
+.navigation{
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 120;
+    border-bottom: 2px solid #6B7DB3;
+    background-color: #BAC2EA;
+}
+
+.logo{
+    display: flex;
+    font-size: 32;
+    color: #5266A1;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.nav-elemts{
+    text-decoration: none;
+    display: flex;
+    width: 40%;
+    position: absolute;
+    right: 0;
+    justify-content: end;
+    padding-right: 30px;
+    align-items: center;
+}
+
+.nav-elem{
+    font-size: 1.2rem;
+    list-style: none;
+    margin-left: 30px;
+}
+
+.link-nav{
+    color: #5266A1;
+    text-decoration: none;
+}
+
+/* end of nav */
+
+.main {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 90px);
+    width: 100%;
+}
+
+.not-keyboard {
+    flex: 1;
+    width: 100%;
+    position: relative;
+}
+
+.container {
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column; /* Stack rows vertically */
+    align-items: center; /* Center rows horizontally */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap within the row */
+    justify-content: center; /* Center buttons horizontally */
+    gap: 5px; /* Space between buttons */
+}
+
+button {
+    background-color: #b9c2ea;
+    border: none;
+    padding: 0;
+    margin: 10px; /* Adjust margin to fit buttons better */
+    font-size: 32px;
+    min-width: 60px;
+    min-height: 60px;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    color: #5266a1;
+}
+
+#gameContainer {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+}
+#dog {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url('../images/dog1.png');
+    background-size: cover;
+    bottom: 30px;
+    left: 30px;
+    transition: left 0.35s ease-in-out;
+}
+
+#present {
+    position: absolute;
+    width: 80px;
+    height: 85px;
+    background-image: url('../images/presentt.png');
+    background-size: cover;
+    bottom: 30px;
+    right: 30px;
+}
+
+#wordDisplay{
+    color: #5266a1;
+    font-size: 64px;
+    text-align: center;
+}
+.controls{
+    display: none;
+}
+/* #resetButton{
+    color: #5266a1;
+    font-size: 32px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    display: none;
+} */
+
+#gameMessage {
+    font-size: 32px;
+    color: #5266a1;
+    margin-top: 30px;
+    text-align: center;
+    visibility: hidden;
+}
+@media (max-width: 575.98px) {
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 24px;
+    }
+    .navigation {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .nav-elemts {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .logo {
+        display: none;
+    }
+    .keyboard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    button {
+        font-size: 24px;
+        min-width: 40px;
+        min-height: 40px;
+        margin: 5px;
+    }
+    #wordDisplay{
+        font-size: 32px;
+    }
+    #dog {
+        width: 70px;
+        height: 70px;
+    }
+    
+    #present {
+        width: 60px;
+        height: 65px;
+    }
+    .main {
+        margin-top: 60px;
+    }
+    #gameContainer{
+        margin-top: 5px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 658px) {
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 24px;
+    }
+    .navigation {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .nav-elemts {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .logo {
+        display: none;
+    }
+    .keyboard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    button {
+        font-size: 24px;
+        min-width: 40px;
+        min-height: 40px;
+        margin: 5px;
+    }
+    #wordDisplay{
+        font-size: 32px;
+    }
+    #dog {
+        width: 70px;
+        height: 70px;
+    }
+    
+    #present {
+        width: 60px;
+        height: 65px;
+    }
+    .main {
+        margin-top: 60px;
+    }
+    #gameContainer{
+        margin-top: 5px;
+        height: 100px;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 900px) {
+    .navigation{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .logo{
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .nav-elemts {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .logo {
+        display: none;
+    }
+    .keyboard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    button {
+        font-size: 24px;
+        min-width: 40px;
+        min-height: 40px;
+        margin: 5px;
+    }
+    #wordDisplay{
+        font-size: 32px;
+    }
+    #dog {
+        width: 70px;
+        height: 70px;
+    }
+    
+    #present {
+        width: 60px;
+        height: 65px;
+    }
+    .main {
+        margin-top: 60px;
+    }
+    #gameContainer{
+        margin-top: 5px;
+        height: 100px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) and (orientation: landscape) {
+    .navigation {
+        width: 100%;
+        padding: 0 10px; /* Add padding to fit content */
+        box-sizing: border-box; /* Ensure padding is included in the element's total width */
+        background-color: #fff; /* Optional: ensure a background color for better visibility */
+        position: fixed; /* Keep the navigation fixed at the top */
+        top: 0;
+        left: 0;
+        z-index: 1000; /* Ensure it appears above other content */
+    }
+
+    .navigation .logo {
+        font-size: 24px; /* Adjust font size if needed */
+    }
+
+    .nav-elemts {
+        display: flex; /* Ensure navigation items are displayed in a row */
+        justify-content: space-around; /* Space out the items */
+        padding: 0; /* Remove default padding */
+        margin: 0; /* Remove default margin */
+    }
+
+    .nav-elem {
+        list-style: none; /* Remove default list styling */
+    }
+
+    .link-nav {
+        text-decoration: none;
+        color: #000; /* Ensure text is visible */
+        font-size: 16px; /* Adjust font size if needed */
+    }
+
+    .main {
+        margin-top: 60px; /* Adjust to ensure content is below the fixed navigation */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative; /* Ensure it controls the stacking order */
+    }
+
+    #wordDisplay {
+        font-size: 32px;
+        margin-bottom: 20px;
+        z-index: 10; /* Ensure it stays on top */
+        text-align: center; /* Center the text */
+    }
+
+    #gameContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end; /* Align items to the bottom */
+        width: 100%;
+        height: 150px; /* Increase height to accommodate elements */
+        padding: 0 10px; /* Add padding to fit content */
+        box-sizing: border-box; /* Ensure padding is included in the element's total height */
+    }
+
+    #dog,
+    #present {
+        position: relative; /* Position relative to control their location */
+        z-index: 5; /* Ensure they stay below #wordDisplay */
+    }
+
+    #dog {
+        width: 70px;
+        height: 70px;
+    }
+
+    #present {
+        width: 60px;
+        height: 65px;
+    }
+}

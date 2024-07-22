@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap');
+
+
+html{
+    background-color: #E6ECFF;
+    font-size: 12;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorantlnfant';
+    font-family: "Silkscreen";
+}
+
+h1{
+    font-size: 70px;
+    font-weight: 400;
+    color: #6B7DB3;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 400;
+    color: #6B7DB3;
+}
+
+p{
+    font-size: 24px;
+    font-weight: 400;
+    color: #6B7DB3;
+}
+
+.start-game{
+    color: #9296FF;
+
+}
+
+.navigation{
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 120;
+    border-bottom: 2px solid #6B7DB3;
+    background-color: #BAC2EA;
+}
+
+.logo{
+    display: flex;
+    font-size: 32;
+    color: #5266A1;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.nav-elemts{
+    text-decoration: none;
+    display: flex;
+    width: 40%;
+    position: absolute;
+    right: 0;
+    justify-content: end;
+    padding-right: 30px;
+    align-items: center;
+}
+
+.nav-elem{
+    font-size: 1.2rem;
+    list-style: none;
+    margin-left: 30px;
+}
+
+.link-nav{
+    color: #5266A1;
+    text-decoration: none;
+}
+
+/* end of nav */
+
+body{
+    width: 100%;
+}
+
+.main{
+    margin-top: 90px;
+    width: 100%;
+}
+
+.holder-main{
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+}
+
+.iamges-all-holder{
+    width: 40%;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.two-hold{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.for-place{
+    position: relative;
+}
+
+.jbj{
+    width: 43%;
+    border: 6px solid #9296FF;
+}
+
+.fpoj{
+    width: 43%;
+    border: 6px solid #9296FF;
+}
+
+.dog-real{
+    width: 100%;
+    border: 6px solid #9296FF;
+}
+
+.words{
+    width: 60%;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hbw{
+    width: 90%;
+}
+
+.gd{
+    height: 160px;
+    position: absolute;
+    bottom: -15px;
+    left: -40px;
+}
+
+@media (max-width: 650px) {
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    p{
+        font-size: 24px;
+    }
+    .navigation{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .logo{
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .nav-elemts {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .logo {
+        display: none;
+    }
+    .nav-elem{
+        font-size: 15px;
+        list-style: none;
+        margin-left: 20px;
+    }
+    .holder-main{
+        flex-direction: column;
+    }
+    .iamges-all-holder{
+        width: 100%;
+        order: 2;
+    }
+    .words{
+        width: 100%;
+        order: 1;
+        margin-bottom: 30px;
+        text-align: center;
+        
+    }
+    .hbw{
+        font-size: 24px;
+        text-align: center;
+    }
+    .hbo{
+        font-weight: 700;
+        font-size: 32px;
+    }
+    .hb{
+        display: none;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 800px) {
+    .navigation{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .logo{
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .nav-elemts {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .logo {
+        display: none;
+    }
+    .nav-elem{
+        font-size: 15px;
+        list-style: none;
+        margin-left: 20px;
+    }
+    .holder-main{
+        flex-direction: column;
+    }
+    .iamges-all-holder{
+        width: 100%;
+        order: 2;
+    }
+    .words{
+        width: 100%;
+        order: 1;
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 1000px) {
+    .holder-main{
+        flex-direction: column;
+    }
+    .iamges-all-holder{
+        width: 100%;
+        order: 2;
+    }
+    .words{
+        width: 100%;
+        order: 1;
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) and (orientation: landscape) {
+    .main {
+        margin-top: 60px;
+    }
+  }

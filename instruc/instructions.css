@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap');
+
+
+html{
+    background-color: #E6ECFF;
+    font-size: 12;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorantlnfant';
+    font-family: "Silkscreen";
+}
+
+h1{
+    font-size: 70px;
+    font-weight: 400;
+    color: #6B7DB3;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 400;
+    color: #6B7DB3;
+}
+
+p{
+    font-size: 24px;
+    font-weight: 400;
+    color: #6B7DB3;
+}
+
+.start-game{
+    color: #9296FF;
+
+}
+
+.navigation{
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 120;
+    border-bottom: 2px solid #6B7DB3;
+    background-color: #BAC2EA;
+}
+
+.logo{
+    display: flex;
+    font-size: 32;
+    color: #5266A1;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.nav-elemts{
+    text-decoration: none;
+    display: flex;
+    width: 40%;
+    position: absolute;
+    right: 0;
+    justify-content: end;
+    padding-right: 30px;
+    align-items: center;
+}
+
+.nav-elem{
+    font-size: 1.2rem;
+    list-style: none;
+    margin-left: 30px;
+}
+
+.link-nav{
+    color: #5266A1;
+    text-decoration: none;
+}
+
+/* end of all similar things */
+
+body{
+    width: 100%;
+}
+
+.header{
+    margin-top: 90px;
+    width: 100%;
+}
+
+.main{
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.main-header{
+    text-align: center;
+}
+
+.how-main{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.holder-4-words{
+    display: flex;
+    margin-top: 15px;
+    height: fit-content;
+}
+
+.words-main{
+    width: 75%;
+}
+
+.dgopreimg{
+    height: 300px;
+    margin-left: 30px;
+}
+
+.img-to-main{
+    display: flex;
+}
+
+@media (max-width: 650px) {
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    p{
+        font-size: 24px;
+    }
+    .navigation{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .logo{
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .nav-elemts {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .logo {
+        display: none;
+    }
+    .nav-elem{
+        font-size: 15px;
+        list-style: none;
+        margin-left: 20px;
+    }
+    .how-main{
+        display: none;
+    }
+    .words-main{
+        width: 100%;
+    }
+    .holder-4-words{
+        text-align: center;
+    }
+    .dgopreimg{
+        display: none;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 800px) {
+    .navigation{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .logo{
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .nav-elemts {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .logo {
+        display: none;
+    }
+    .nav-elem{
+        font-size: 15px;
+        list-style: none;
+        margin-left: 20px;
+    }
+    .dgopreimg{
+        display: none;
+    }
+    .how-main{
+        display: none;
+    }
+    .words-main{
+        width: 100%;
+    }
+    .holder-4-words{
+        text-align: center;
+    }
+    .dgopreimg{
+        display: none;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 900px) {
+    .how-main{
+        display: none;
+    }
+    .words-main{
+        width: 100%;
+    }
+    .holder-4-words{
+        text-align: center;
+    }
+    .dgopreimg{
+        display: none;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) and (orientation: landscape) {
+    .main {
+        margin-top: 60px;
+    }
+  }
